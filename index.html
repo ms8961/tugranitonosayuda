@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tu granito ayuda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Inter', sans-serif;
+  background:#f5f6f7;
+  color:#111;
+}
+.container{
+  max-width:760px;
+  margin:auto;
+  background:#fff;
+  padding:26px;
+}
+.top{
+  text-align:center;
+  font-size:13px;
+  color:#888;
+  letter-spacing:1px;
+  margin-bottom:20px;
+}
+h1{
+  font-size:34px;
+  font-weight:600;
+  margin:10px 0;
+}
+h2{
+  font-size:24px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+p{
+  font-size:16px;
+  line-height:1.8;
+  color:#333;
+}
+.buttons{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+.btn{
+  background:#111;
+  color:#fff;
+  padding:12px 26px;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:500;
+}
+.btn.light{
+  background:#f0f0f0;
+  color:#111;
+}
+.progress{
+  background:#e5e5e5;
+  border-radius:999px;
+  overflow:hidden;
+  margin:18px 0;
+}
+.progress div{
+  height:12px;
+  width:74%;
+  background:#22c55e;
+}
+img{
+  width:100%;
+  border-radius:18px;
+  margin:26px 0 10px;
+}
+.caption{
+  font-size:13px;
+  color:#777;
+}
+.section{
+  margin-top:48px;
+}
+.dark{
+  background:#0f172a;
+  color:#fff;
+  padding:34px 26px;
+  border-radius:22px;
+}
+.dark p{color:#e5e7eb}
+.card{
+  background:#1e293b;
+  border-radius:18px;
+  padding:18px 20px;
+  margin:16px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.copy{
+  background:#fff;
+  border:none;
+  padding:8px 18px;
+  border-radius:999px;
+  font-size:14px;
+  cursor:pointer;
+}
+.ok{
+  font-size:13px;
+  color:#86efac;
+  margin-top:10px;
+}
+.list{
+  margin:0;
+  padding-left:18px;
+}
+.list li{
+  margin:10px 0;
+}
+.faq{
+  border-top:1px solid #e5e7eb;
+}
+.faq-item{
+  border-bottom:1px solid #e5e7eb;
+}
+.faq-title{
+  padding:20px 0;
+  font-weight:500;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+}
+.faq-content{
+  display:none;
+  padding-bottom:20px;
+  font-size:15px;
+  color:#444;
+}
+.footer{
+  text-align:center;
+  font-size:13px;
+  color:#777;
+  margin:50px 0 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="top">TU GRANITO AYUDA ❤️</div>
+
+  <h1>Lucas necesita tu ayuda hoy</h1>
+
+  <p>
+    Hoy su corazón <strong>no está pudiendo sostener su cuerpo</strong> como debería.
+    Se cansa con facilidad, le falta el aire y su vida se volvió una cadena de
+    controles, estudios y guardias.
+  </p>
+
+  <div class="buttons">
+    <a href="#donar" class="btn">Quiero donar</a>
+    <a href="#historia" class="btn light">Conocé su historia</a>
+  </div>
+
+  <div class="progress"><div></div></div>
+
+  <p><strong>Recaudado $14.045.200</strong><br>
+  de $18.980.000 estimados para cubrir el plan de tratamiento.</p>
+
+  <img src="imagen.jpg" alt="Lucas">
+  <div class="caption">Tu granito hoy es su paso más cerca.</div>
+
+  <div id="historia" class="section">
+    <h2>Lucas tiene 6 meses y…</h2>
+
+    <p>
+      Está enfrentando algo que ninguna familia debería atravesar.
+      <strong>Tiene una cardiopatía y su cuadro se volvió delicado</strong>:
+      hay días en los que una caminata corta lo deja sin aire,
+      y la noche se hace más difícil porque el cansancio no siempre lo deja descansar bien.
+    </p>
+
+    <p>
+      Desde hace meses la rutina cambió por completo: turnos, estudios,
+      internaciones y la incertidumbre de lo que viene.
+      Lucas entiende más de lo que parece, y aun así intenta seguir siendo un nene.
+    </p>
+
+    <p>
+      Lo más duro es que, además del impacto emocional,
+      <strong>el proceso trae gastos constantes</strong>:
+      viajes, estadías cerca del hospital, medicación de soporte,
+      estudios y cuidados que muchas veces no están cubiertos.
+    </p>
+
+    <p>
+      Por eso armamos esta campaña: para que Lucas pueda sostener su tratamiento
+      sin que la familia se destruya en el intento.
+    </p>
+  </div>
+
+  <div id="donar" class="section dark">
+    <h2>Cómo donar</h2>
+    <p>Podés colaborar por transferencia</p>
+
+    <div class="card">
+      <span><strong>Alias</strong><br>TUGRANITOAYUDA50</span>
+      <button class="copy" onclick="copiar('TUGRANITOAYUDA50')">Copiar alias</button>
+    </div>
+
+    <div class="card">
+      <span><strong>CBU / CVU</strong><br>0000147800000071681829</span>
+      <button class="copy" onclick="copiar('0000147800000071681829')">Copiar CBU/CVU</button>
+    </div>
+
+    <p class="small">Titular de la cuenta: Angelica Soledad Cardozo (Tutora de Lucas)</p>
+    <div id="msg" class="ok"></div>
+  </div>
+
+  <div class="section">
+    <h2>Transparencia</h2>
+    <p>Estos son costos estimados del proceso:</p>
+
+    <ul class="list">
+      <li>Internación y honorarios médicos — $5.600.000</li>
+      <li>Tratamiento (fase inicial y soporte) — $8.400.000</li>
+      <li>Estudios y laboratorio — $2.300.000</li>
+      <li>Medicación de soporte — $1.960.000</li>
+      <li>Traslados y cuidados domiciliarios — $720.000</li>
+    </ul>
+
+    <p>Actualizaremos estos valores a medida que avance el plan médico.</p>
+  </div>
+
+  <div class="section">
+    <h2>Preguntas frecuentes</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-title" onclick="toggle(this)">
+          ¿Hay un monto mínimo para donar?
+          <span>⌄</span>
+        </div>
+        <div class="faq-content">
+          No. Cada aporte, sin importar el monto, ayuda muchísimo a sostener el tratamiento de Lucas.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title" onclick="toggle(this)">
+          ¿Puedo donar desde otro banco o billetera virtual?
+          <span>⌄</span>
+        </div>
+        <div class="faq-content">
+          Sí, cualquier banco o billetera con alias o CBU/CVU funciona sin problemas.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title" onclick="toggle(this)">
+          ¿Qué pasa si no llegamos al objetivo?
+          <span>⌄</span>
+        </div>
+        <div class="faq-content">
+          Todo lo recaudado se destinará al tratamiento de Lucas; si quedara un excedente, se donará a fundaciones que asisten a  niños con enfermedades similares.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 · TU GRANITO AYUDA — Campaña solidaria. Gracias por tu apoyo.
+  </div>
+
+</div>
+
+<script>
+function copiar(texto){
+  navigator.clipboard.writeText(texto);
+  document.getElementById("msg").innerText = "Copiado al portapapeles ✅";
+}
+function toggle(el){
+  const content = el.nextElementSibling;
+  content.style.display = content.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
+
